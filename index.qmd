@@ -1,11 +1,72 @@
 ---
-title: "test"
+title: ""
+about:
+  template: trestles
+  image: files/avatar.png
+  links:
+    - icon: globe
+      text: Web
+      aria-label: Web	
+      href: https://opop999.github.io
+    - icon: github
+      text: Github
+      aria-label: Github
+      href: https://github.com/opop999
+    - icon: linkedin
+      text: LinkedIn
+      aria-label: LinkedIn
+      href: https://www.linkedin.com/in/ondrej-pekacek
+    - text: "{{< fa brands orcid >}} ORCID"
+      aria-label: ORCID
+      href: https://orcid.org/0000-0002-4904-1896
+comments: false
 ---
 
-This is a Quarto website.
+<span class=dropcap>I</span> am a sociologist at the Charles University with a focus on political communication, recently finished my research stay at the Deparment of Communication at the University of Vienna. <br><br> I am interested in how computational tools, such as Natural Language Processing, could benefit social science in particular, and, more generally, the development of a healthy democratic society at large. <br><br> Besides conducting research and implementing data science solutions, I am passionate about teaching, language learning and knowledge sharing.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+<!-- Using TsParticles -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-bubbles@2/tsparticles.preset.bubbles.bundle.min.js"></script> -->
 
-```{r}
-1 + 1
-```
+<!-- <script type="text/javascript">(async () => { -->
+<!--   await loadBubblesPreset(tsParticles); // this is required only if you are not using the bundle script -->
+
+<!--   await tsParticles.load("tsparticles", { -->
+<!--     preset: "bubbles", -->
+<!--   }); -->
+<!-- })();</script> -->
+
+<canvas class="background"></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+<script type="text/javascript">
+window.onload = function() {
+	Particles.init({
+		selector: ".background",
+		maxParticles: 400,
+		connectParticles: true,
+		color: "#96C5F7",
+		responsive: [{
+			breakpoint: 1200,
+			options: {
+				maxParticles: 250
+			}
+		}, {
+			breakpoint: 992,
+			options: {
+				maxParticles: 150
+			}
+		}, {
+			breakpoint: 768,
+			options: {
+				maxParticles: 100
+			}
+		}, {
+			breakpoint: 576,
+			options: {
+				maxParticles: 0
+			}
+		}]
+	})
+};
+</script>
+
+

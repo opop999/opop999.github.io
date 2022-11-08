@@ -1,0 +1,10 @@
+---
+title: Page Not Found
+page-layout: full
+title-block-banner: true
+comments: false
+---
+
+The page you requested cannot be found. <br> 
+For biography, see the [about](./about.html) page and for projects, see the [projects](./projects.html) page.
+

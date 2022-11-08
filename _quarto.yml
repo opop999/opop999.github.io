@@ -1,20 +1,50 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "*.Rmd"
+    - "*.md"
+    - "!README.md"
+  resources:
+    - "files/"
+  preview:
+    port: 4321
+    browser: true  
+  
+description-meta: "Website of Ondrej Pekacek."
 
 website:
-  title: "test"
-  navbar:
+  title: "Ondrej Pekacek"
+  site-url: "https://opop999.github.io/"
+  repo-url: https://github.com/opop999/opop999.github.io
+  description: "Ondrej Pekacek's Personal Website"
+  favicon: /files/favicon.ico 
+  search: false
+  navbar: 
+    background: "#96C5F7"
+    logo: /files/favicon.ico
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: "About"
+        href: about.qmd
+      - text: "Projects"
+        href: projects.qmd     
+    right:
+      - icon: linkedin
+        aria-label: LinkedIn
+        href: https://www.linkedin.com/in/ondrej-pekacek
+      - icon: github
+        aria-label: GitHub
+        href: https://github.com/opop999
+  page-footer:
+    center: |
+      Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/) <br>
+      Source at [{{< fa brands github >}} GitHub](https://github.com/opop999/opop999.github.io) <br>
+      Design inspired by [Andreas Handel](https://www.andreashandel.com/)
 
 format:
   html:
-    theme: cosmo
     css: styles.css
-    toc: true
-
-editor: visual
+    theme: ember.scss
+    toc: false
 
