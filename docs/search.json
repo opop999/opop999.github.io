@@ -2,15 +2,29 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Brief professional biography",
     "section": "",
-    "text": "1 + 1\n\n[1] 2"
+    "text": "Current position\nI started my faculty career in 2009 as Assistant Professor in the Department of Epidemiology and Biostatistics, College of Public Health, at the University of Georgia (UGA). I am currently (full) Professor and Associate Department Head.\nI have adjunct appointments in UGA’s School of Ecology and the Department of Epidemiology, Rollins School of Public Health at Emory University. I am also a Member of UGA’s Institute of Bioinformatics and Center for the Ecology of Infectious Diseases.\n\n\nResearch focus\nI work on data analytics and modeling of infectious diseases, mainly influenza, tuberculosis and norovirus. Lately, I have also worked a lot on COVID-19. I uses mathematical models, computational simulations and statistical analysis to understand the dynamics of pathogens on different spatial and temporal scales. I work both on the within-host level (the immunology, virology, microbiology scale) and the population level (the epidemiology, ecology, evolution scale). The ultimate goal of my work is to help design better intervention and control strategies against infectious diseases, both for individual patients and on the population level.\nDescriptions of some current research projects can be found on my research group website. Slides for recent talks and presentations are located on this website and can be found here.\n\n\nPrevious positions\nFrom 2004 - 2009, I was a Postdoctoral Fellow in the Department of Biology at Emory University in the group of Rustom Antia. During my Postdoc I made the transition from physics to infectious disease modeling.\nFrom 1999 - 2004, I did a PhD in theoretical physics at the Center for Nonlinear Science and School of Physics, Georgia Institute of Technology. I worked with Roman Grigoriev on the topic of localized control of spatially extended, nonlinear dynamical systems.\nI grew up in Germany and started my undergrad studies in 1996 at the University of Stuttgart, in Physics. I received my B.S. (or what could be considered the German equivalent) in 1999, after which I moved to the U.S.\n\n\n\n\n\nflowchart LR\n  A[Hard edge] --> B(Round edge)\n  B --> C{Decision}\n  C --> D[Result one]\n  C --> E[Result two]"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "test",
+    "title": "Ondrej Pekacek",
     "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "I am a sociologist at the Charles University with a focus on political communication, recently finished my research stay at the Deparment of Communication at the University of Vienna.  I am interested in how computational tools, such as Natural Language Processing, could benefit social science in particular, and, more generally, the development of a healthy democratic society at large.  Besides conducting research and implementing data science solutions, I am passionate about teaching, language learning and knowledge sharing."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nClimate Change & Czech Public News Media\n\n\n\nClimate Change\n\n\nNews Media\n\n\nCzech Republic\n\n\n\nResearch on climate reporting.\n\n\n\n\n\n\nOct 1, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/climate_change_media/index.html",
+    "href": "projects/climate_change_media/index.html",
+    "title": "Climate Change & Czech Public News Media",
+    "section": "",
+    "text": "We developed an R package that provides immunologists and other bench scientists a user-friendly introduction to simulation modeling of within-host infection, without the need to write computer code. Learn more about it on the package website."
   }
 ]

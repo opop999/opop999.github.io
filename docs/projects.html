@@ -8,7 +8,7 @@
 
 <meta name="description" content="Website of Ondrej Pekacek.">
 
-<title>Ondrej Pekacek - Brief professional biography</title>
+<title>Ondrej Pekacek - Projects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -27,6 +27,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <link href=".//files/favicon.ico" rel="icon">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -52,15 +54,42 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -80,11 +109,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page">
+    <a class="nav-link" href="./about.html">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html">
+    <a class="nav-link active" href="./projects.html" aria-current="page">
  <span class="menu-text">Projects</span></a>
   </li>  
 </ul>
@@ -105,68 +134,105 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Projects</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Climate Change">Climate Change <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Czech Republic">Czech Republic <span class="quarto-category-count">(1)</span></div><div class="category" data-category="News Media">News Media <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Brief professional biography</h1>
-</div>
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
+
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+     </select>
   </div>
-  
-
-</header>
-
-<section id="current-position" class="level3">
-<h3 class="anchored" data-anchor-id="current-position">Current position</h3>
-<p>I started my faculty career in 2009 as Assistant Professor in the <a href="http://www.publichealth.uga.edu/epibio/">Department of Epidemiology and Biostatistics</a>, <a href="http://www.publichealth.uga.edu/">College of Public Health</a>, at the <a href="http://www.uga.edu/">University of Georgia (UGA)</a>. I am currently (full) Professor and Associate Department Head.</p>
-<p>I have adjunct appointments in UGA’s <a href="https://www.ecology.uga.edu/directory/andreas-handel/">School of Ecology</a> and the <a href="http://sph.emory.edu/faculty/profile/#AHANDEL">Department of Epidemiology, Rollins School of Public Health</a> at <a href="http://www.emory.edu/">Emory University</a>. I am also a Member of UGA’s <a href="http://iob.uga.edu/faculty/">Institute of Bioinformatics</a> and <a href="https://www.ceid.uga.edu/">Center for the Ecology of Infectious Diseases</a>.</p>
-</section>
-<section id="research-focus" class="level3">
-<h3 class="anchored" data-anchor-id="research-focus">Research focus</h3>
-<p>I work on data analytics and modeling of infectious diseases, mainly influenza, tuberculosis and norovirus. Lately, I have also worked a lot on COVID-19. I uses mathematical models, computational simulations and statistical analysis to understand the dynamics of pathogens on different spatial and temporal scales. I work both on the within-host level (the immunology, virology, microbiology scale) and the population level (the epidemiology, ecology, evolution scale). The ultimate goal of my work is to help design better intervention and control strategies against infectious diseases, both for individual patients and on the population level.</p>
-<p>Descriptions of some current research projects can be found <a href="https://handelgroup.uga.edu/">on my research group website</a>. Slides for recent talks and presentations are located on this website and <a href="https://www.andreashandel.com/presentations/">can be found here</a>.</p>
-</section>
-<section id="previous-positions" class="level3">
-<h3 class="anchored" data-anchor-id="previous-positions">Previous positions</h3>
-<p>From 2004 - 2009, I was a Postdoctoral Fellow in the <a href="http://www.biology.emory.edu/">Department of Biology</a> at <a href="http://www.emory.edu/">Emory University</a> in the group of <a href="http://www.biology.emory.edu/Antia/">Rustom Antia</a>. During my Postdoc I made the transition from physics to infectious disease modeling.</p>
-<p>From 1999 - 2004, I did a PhD in theoretical physics at the <a href="http://cns.physics.gatech.edu/">Center for Nonlinear Science</a> and <a href="http://www.physics.gatech.edu/">School of Physics</a>, <a href="http://www.gatech.edu/">Georgia Institute of Technology</a>. I worked with <a href="http://www.cns.gatech.edu/~roman/">Roman Grigoriev</a> on the topic of localized control of spatially extended, nonlinear dynamical systems.</p>
-<p>I grew up in Germany and started my undergrad studies in 1996 at the <a href="http://www.uni-stuttgart.de/en/">University of Stuttgart</a>, in <a href="https://www.f08.uni-stuttgart.de/en/physics/">Physics</a>. I received my B.S. (or what could be considered the German equivalent) in 1999, after which I moved to the U.S.</p>
-<p><img src="files/data_science.png" class="img-fluid"></p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<p>
-</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
-  A[Hard edge] --&gt; B(Round edge)
-  B --&gt; C{Decision}
-  C --&gt; D[Result one]
-  C --&gt; E[Result two]
-</pre>
-<div id="mermaid-tooltip-1" class="mermaidTooltip">
-
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-<p></p>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Climate Change,News Media,Czech Republic" data-listing-date-sort="1664575200000" data-listing-file-modified-sort="1667929811706" data-listing-reading-time-sort="0.18">
+<a href="./projects/climate_change_media/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./projects/climate_change_media/featured.png" class="thumbnail-image card-img" style="height: 150px;" alt="Climate Change &amp; Czech Public News Media">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Climate Change &amp; Czech Public News Media
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Climate Change'); return false;">
+Climate Change
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('News Media'); return false;">
+News Media
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Czech Republic'); return false;">
+Czech Republic
 </div>
 </div>
+<div class="card-text listing-description">
+Research on climate reporting.
 </div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
 
-
-</section>
-
-</main> <!-- /main -->
+</div>
+<div class="listing-date">
+Oct 1, 2022
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

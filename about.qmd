@@ -24,3 +24,11 @@ From 1999 - 2004, I did a PhD in theoretical physics at the [Center for Nonlinea
 I grew up in Germany and started my undergrad studies in 1996 at the [University of Stuttgart](http://www.uni-stuttgart.de/en/), in [Physics](https://www.f08.uni-stuttgart.de/en/physics/). I received my B.S. (or what could be considered the German equivalent) in 1999, after which I moved to the U.S.
 
 ![](files/data_science.png)
+
+```{mermaid}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+```
