@@ -7,7 +7,7 @@ project:
     - "*.md"
     - "!README.md"
   resources:
-    - "files/"
+    - "images/"
   preview:
     port: 4321
     browser: true  
@@ -16,19 +16,21 @@ description-meta: "Website of Ondrej Pekacek."
 
 website:
   title: "Ondrej Pekacek"
-  site-url: "https://opop999.github.io/"
-  repo-url: https://github.com/opop999/opop999.github.io
   description: "Ondrej Pekacek's Personal Website"
-  favicon: /files/favicon.ico 
+  site-url: "https://opop999.github.io/"
+  open-graph: 
+    locale: "en_US"
+    description: "Ondrej Pekacek's Personal Website"
+    image: /images/social_preview.png
+  repo-url: https://github.com/opop999/opop999.github.io
+  favicon: /images/favicon.ico 
   search: false
   navbar: 
     background: "#96C5F7"
-    logo: /files/favicon.ico
+    logo: /images/favicon.ico
     left:
-      - text: "About"
+      - text: "About Me"
         href: about.qmd
-      - text: "Projects"
-        href: projects.qmd     
     right:
       - icon: linkedin
         aria-label: LinkedIn
@@ -44,7 +46,7 @@ website:
 
 format:
   html:
-    css: styles.css
-    theme: ember.scss
+    minimal: true
+    theme: css/theme.scss
     toc: false
 
