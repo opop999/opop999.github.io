@@ -11,20 +11,21 @@ project:
   preview:
     port: 4321
     browser: true  
-  
+    
 description-meta: "Website of Ondrej Pekacek."
-
 website:
   title: "Ondrej Pekacek"
-  description: "Ondrej Pekacek's Personal Website"
+  search: false
+  description: "I am a Media Sociologist and Data Scientist specializing in Political Communication and Natural Language Processing."
   site-url: "https://opop999.github.io/"
   open-graph: 
     locale: "en_US"
     description: "Ondrej Pekacek's Personal Website"
     image: /images/social_preview.png
+    image-width: 1200
+    image-height: 600
   repo-url: https://github.com/opop999/opop999.github.io
   favicon: /images/favicon.ico 
-  search: false
   navbar: 
     background: "#96C5F7"
     logo: /images/favicon.ico

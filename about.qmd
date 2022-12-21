@@ -1,13 +1,14 @@
 ---
 title: "About Me"
 comments: false
+smooth-scroll: true
 ---
 
 As a data scientist and Ph.D. candidate in sociology at Charles University with expertise in media communication, I have a strong interest in exploring how Natural Language Processing and Machine Learning can benefit my discipline and promote societal transparency and accountability. 
 
-My recent work includes implementing automated end-to-end data pipelines for the analysis of political communication and election spending at Transparency International ČR, dissertation research of 0.9 million articles on migration in Czech media 2015-2022, and developing a computational research pipeline to analyze a decade of transcripts from Czech Television as part of a grant project focused on climate change reporting at the Academy of Performing Arts in Prague.
+My recent work includes implementing automated end-to-end data pipelines for the analysis of [political communication](https://github.com/opop999/TI_monitoring_fb_political_ads_2023) and [election spending](https://github.com/opop999/TI_monitoring_transparent_accounts_2023) at Transparency International, dissertation research of 0.9 million articles on [migration in Czech media 2015-2022](https://github.com/opop999/media_discourse_research), and developing a computational research pipeline to analyze a decade of transcripts from Czech Television as part of a grant project focused on [climate change reporting](https://github.com/opop999/public_media_climate_change) at the Academy of Performing Arts in Prague.
 
-In addition to conducting research and implementing data science solutions, I enjoy teaching and sharing my knowledge with others. I have contributed to public outreach efforts, including the `Radlibrary` R package, chapter in the open-source book [APIs for social scientists](https://bookdown.org/paul/apis_for_social_scientists/facebook-ad-library-api.html) and the [written language improver](https://github.com/opop999/syntax_improver) web application.
+In addition to conducting research and implementing data science solutions, I enjoy teaching and sharing my knowledge with others. I have contributed to public outreach efforts, including the `Radlibrary` R package, chapter in the open-source book [APIs for social scientists](https://bookdown.org/paul/apis_for_social_scientists/facebook-ad-library-api.html) and the [written language improver](https://opop999.github.io/syntax_improver_static_site/) web application.
 
 
 ## Education
