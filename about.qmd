@@ -146,4 +146,4 @@ At CIEE, I have had the opportunity to help international students students from
 
 *** 
 
-![Asking DALL-E 2.0: "How will the profession of data science look like in 2050?"](images/data_science.png)
+![Asking DALL-E 2.0: "How will the profession of data science look like in 2050?"](images/data_science.webp)

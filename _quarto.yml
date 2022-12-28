@@ -21,14 +21,14 @@ website:
   open-graph: 
     locale: "en_US"
     description: "Ondrej Pekacek's Personal Website"
-    image: /images/social_preview.png
+    image: images/social_preview.webp
     image-width: 1200
     image-height: 600
   repo-url: https://github.com/opop999/opop999.github.io
-  favicon: /images/favicon.ico 
+  favicon: images/favicon.ico 
   navbar: 
     background: "#96C5F7"
-    logo: /images/favicon.ico
+    logo: images/favicon.ico
     left:
       - text: "About Me"
         href: about.qmd
